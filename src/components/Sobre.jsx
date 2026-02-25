@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Sobre() {
   // Imagem da seção Sobre Nós
-  const bgImage = "/sobre-bg.jpg";
+  const bgImage = "/sobre-bg.png";
 
   return (
     <section id="sobre" className="py-32 px-8 bg-[#111111] relative overflow-hidden">

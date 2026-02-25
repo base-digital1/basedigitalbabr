@@ -5,7 +5,7 @@ export default function Hero() {
   const words = headline.split(" ");
   
   // Usando a imagem que você acabou de fazer upload!
-  const bgImage = "/hero-bg.jpg";
+  const bgImage = "/hero-bg.png";
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
