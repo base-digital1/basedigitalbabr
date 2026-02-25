@@ -9,7 +9,7 @@ const images = [
 
 export default function Galeria() {
   return (
-    <section className="py-32 px-8 bg-[#111111]">
+    <section id="galeria" className="py-32 px-8 bg-[#111111]">
       <div className="max-w-7xl mx-auto">
         
         <div className="mb-20 flex flex-col items-end text-right">
@@ -21,13 +21,14 @@ export default function Galeria() {
           {images.map((src, index) => (
             <div 
               key={index} 
-              className={`relative aspect-[3/4] rounded-[20px] overflow-hidden shadow-2xl border border-white/5 transition-all duration-500 ease-in-out hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-primary/30 hover:-translate-y-2 ${index % 2 !== 0 ? 'lg:translate-y-12' : ''}`}
+              className={`relative aspect-[3/4] rounded-[20px] overflow-hidden shadow-2xl border border-white/5 transition duration-500 ease-in-out hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-primary/30 hover:-translate-y-2 will-change-transform ${index % 2 !== 0 ? 'lg:translate-y-12' : ''}`}
             >
               <img 
                 src={src} 
                 alt={`Galeria ${index + 1}`} 
-                className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-700 transform hover:scale-110"
+                className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition duration-700 transform hover:scale-110 transform-gpu will-change-[transform,filter]"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
           ))}

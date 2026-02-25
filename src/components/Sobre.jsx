@@ -11,8 +11,9 @@ export default function Sobre() {
             <img 
               src="https://picsum.photos/seed/barberabout/1000/800" 
               alt="Sobre a Barbearia Império" 
-              className="w-full h-[500px] md:h-[700px] object-cover rounded-[20px] shadow-[0_20px_50px_rgba(0,0,0,0.6)] grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition-all duration-500 ease-in-out"
+              className="w-full h-[500px] md:h-[700px] object-cover rounded-[20px] shadow-[0_20px_50px_rgba(0,0,0,0.6)] grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition duration-500 ease-in-out transform-gpu will-change-[filter]"
               referrerPolicy="no-referrer"
+              loading="lazy"
             />
           </div>
 

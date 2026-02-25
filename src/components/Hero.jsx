@@ -30,7 +30,7 @@ export default function Hero() {
                     <span 
                       key={lIndex}
                       className="inline-block animate-word-reveal"
-                      style={{ animationDelay: `${absoluteIndex * 40}ms` }}
+                      style={{ animationDelay: `${absoluteIndex * 80}ms` }}
                     >
                       {letter}
                     </span>
@@ -50,7 +50,7 @@ export default function Hero() {
           href="https://wa.me/5567991788626" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block bg-primary text-[#0a0a0a] font-bold text-lg md:text-xl px-12 py-5 rounded-[20px] uppercase tracking-[0.15em] hover:bg-white hover:shadow-[0_10px_40px_rgba(201,162,39,0.4)] transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+          className="inline-block bg-primary text-[#0a0a0a] font-bold text-lg md:text-xl px-12 py-5 rounded-[20px] uppercase tracking-[0.15em] hover:bg-white hover:shadow-[0_10px_40px_rgba(201,162,39,0.4)] transition duration-300 ease-in-out transform hover:-translate-y-1 will-change-transform"
         >
           Agendar Horário
         </a>

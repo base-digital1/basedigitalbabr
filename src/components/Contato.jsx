@@ -63,7 +63,7 @@ export default function Contato() {
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               title="Localização Barbearia Império"
-              className="w-full h-full grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700 ease-in-out"
+              className="w-full h-full grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition duration-700 ease-in-out transform-gpu will-change-[filter,opacity]"
             ></iframe>
           </div>
 

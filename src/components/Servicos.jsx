@@ -27,7 +27,7 @@ export default function Servicos() {
             {services.slice(0, 4).map((service, index) => (
               <div 
                 key={index} 
-                className="bg-[#111111] p-8 md:p-10 rounded-[20px] shadow-xl border border-white/5 hover:border-primary/50 hover:shadow-[0_15px_40px_rgba(201,162,39,0.15)] transition-all duration-300 ease-in-out transform hover:-translate-y-2 flex items-center justify-between group cursor-default"
+                className="bg-[#111111] p-8 md:p-10 rounded-[20px] shadow-xl border border-white/5 hover:border-primary/50 hover:shadow-[0_15px_40px_rgba(201,162,39,0.15)] transition duration-300 ease-in-out transform hover:-translate-y-2 flex items-center justify-between group cursor-default will-change-transform"
               >
                 <span className="text-xl md:text-2xl font-bold text-gray-300 group-hover:text-white transition-colors tracking-wide">{service}</span>
                 <span className="text-primary font-heading text-4xl group-hover:scale-110 transition-transform duration-300">+</span>
@@ -40,7 +40,7 @@ export default function Servicos() {
             {services.slice(4, 8).map((service, index) => (
               <div 
                 key={index} 
-                className="bg-[#111111] p-8 md:p-10 rounded-[20px] shadow-xl border border-white/5 hover:border-primary/50 hover:shadow-[0_15px_40px_rgba(201,162,39,0.15)] transition-all duration-300 ease-in-out transform hover:-translate-y-2 flex items-center justify-between group cursor-default"
+                className="bg-[#111111] p-8 md:p-10 rounded-[20px] shadow-xl border border-white/5 hover:border-primary/50 hover:shadow-[0_15px_40px_rgba(201,162,39,0.15)] transition duration-300 ease-in-out transform hover:-translate-y-2 flex items-center justify-between group cursor-default will-change-transform"
               >
                 <span className="text-xl md:text-2xl font-bold text-gray-300 group-hover:text-white transition-colors tracking-wide">{service}</span>
                 <span className="text-primary font-heading text-4xl group-hover:scale-110 transition-transform duration-300">+</span>
