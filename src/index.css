@@ -16,3 +16,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   letter-spacing: 0.05em;
 }
+
+@keyframes word-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-word-reveal {
+  opacity: 0;
+  animation: word-reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default function Hero() {
+  const headline = "Barbearia Império";
+  const words = headline.split(" ");
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Full Screen Background Image */}
@@ -17,9 +20,26 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-8 w-full flex flex-col items-start pt-20">
-        <h1 className="text-7xl md:text-8xl lg:text-[140px] text-white mb-6 uppercase tracking-widest leading-[0.9] font-heading drop-shadow-2xl">
-          Barbearia <br/>
-          <span className="text-primary">Império</span>
+        <h1 className="text-7xl md:text-8xl lg:text-[140px] mb-6 uppercase tracking-widest leading-[0.9] font-heading drop-shadow-2xl">
+          {words.map((word, wIndex) => (
+            <React.Fragment key={wIndex}>
+              <span className={`inline-block whitespace-nowrap ${wIndex === 1 ? 'text-primary' : 'text-white'}`}>
+                {word.split("").map((letter, lIndex) => {
+                  const absoluteIndex = wIndex === 0 ? lIndex : words[0].length + lIndex;
+                  return (
+                    <span 
+                      key={lIndex}
+                      className="inline-block animate-word-reveal"
+                      style={{ animationDelay: `${absoluteIndex * 40}ms` }}
+                    >
+                      {letter}
+                    </span>
+                  );
+                })}
+              </span>
+              {wIndex === 0 && <br />}
+            </React.Fragment>
+          ))}
         </h1>
         
         <p className="text-gray-300 text-xl md:text-2xl font-light tracking-wide max-w-xl mb-12 drop-shadow-md">
