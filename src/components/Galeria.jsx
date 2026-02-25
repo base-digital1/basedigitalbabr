@@ -1,10 +1,10 @@
 import React from 'react';
 
-const images = [
-  "https://picsum.photos/seed/barbercut/800/1000",
-  "https://picsum.photos/seed/beardtrim/800/1000",
-  "https://picsum.photos/seed/barberinterior/800/1000",
-  "https://picsum.photos/seed/barbertools/800/1000"
+const galleryImages = [
+  "https://picsum.photos/seed/cut1/800/1000",
+  "https://picsum.photos/seed/cut2/800/1000",
+  "https://picsum.photos/seed/cut3/800/1000",
+  "https://picsum.photos/seed/cut4/800/1000"
 ];
 
 export default function Galeria() {
@@ -18,14 +18,14 @@ export default function Galeria() {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {images.map((src, index) => (
+          {galleryImages.map((src, index) => (
             <div 
               key={index} 
               className={`relative aspect-[3/4] rounded-[20px] overflow-hidden shadow-2xl border border-white/5 transition duration-500 ease-in-out hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-primary/30 hover:-translate-y-2 will-change-transform ${index % 2 !== 0 ? 'lg:translate-y-12' : ''}`}
             >
               <img 
                 src={src} 
-                alt={`Galeria ${index + 1}`} 
+                alt={`Corte de Cabelo ${index + 1}`} 
                 className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition duration-700 transform hover:scale-110 transform-gpu will-change-[transform,filter]"
                 referrerPolicy="no-referrer"
                 loading="lazy"

@@ -3,13 +3,14 @@ import React from 'react';
 export default function Hero() {
   const headline = "Barbearia Império";
   const words = headline.split(" ");
+  const bgImage = "/hero-bg.jpg"; // Imagem local na pasta public
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Full Screen Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/seed/barberhero/1920/1080" 
+          src={bgImage} 
           alt="Barbearia Império" 
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"
