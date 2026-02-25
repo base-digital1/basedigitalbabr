@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Bebas Neue", sans-serif;
+  --color-primary: #C9A227;
+  --color-secondary: #1A1A1A;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+}
