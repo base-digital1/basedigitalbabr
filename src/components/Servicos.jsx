@@ -4,22 +4,22 @@ const servicesData = [
   {
     id: 'corte',
     title: "Corte Masculino",
-    image: "/servico-corte.jpg.png"
+    image: "/servico-corte.jpg"
   },
   {
     id: 'barba',
     title: "Barba",
-    image: "/servico-barba.jpg.png"
+    image: "/servico-barba.jpg"
   },
   {
     id: 'sobrancelha',
     title: "Sobrancelha",
-    image: "/servico-sobrancelha.jpg.png.png"
+    image: "/servico-sobrancelha.jpg"
   },
   {
     id: 'pigmentacao',
     title: "Pigmentação",
-    image: "/servico-pigmentacao.jpg.png.png"
+    image: "/servico-pigmentacao.jpg"
   }
 ];
 

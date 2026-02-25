@@ -1,10 +1,10 @@
 import React from 'react';
 
 const galleryImages = [
-  "/galeria-1.jpg.png.png",
-  "/galeria-2.jpg.png.png",
-  "/galeria-3.jpg.png.png",
-  "/galeria-4.jpg.png.png"
+  "/galeria-1.jpg",
+  "/galeria-2.jpg",
+  "/galeria-3.jpg",
+  "/galeria-4.jpg"
 ];
 
 export default function Galeria() {
