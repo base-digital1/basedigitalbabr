@@ -6,11 +6,11 @@ export default function CTA() {
       <div className="max-w-7xl mx-auto relative rounded-[32px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.8)]">
         
         {/* Background Image & Overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
           <img 
             src="https://picsum.photos/seed/barbercta/1920/800" 
             alt="Barbearia CTA" 
-            className="w-full h-full object-cover grayscale opacity-40"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
             loading="lazy"
           />

@@ -3,16 +3,18 @@ import React from 'react';
 export default function Hero() {
   const headline = "Barbearia Império";
   const words = headline.split(" ");
-  const bgImage = "/hero-bg.jpg"; // Imagem local na pasta public
+  
+  // Usando a imagem que você acabou de fazer upload!
+  const bgImage = "/hero-bg.jpg.png";
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Full Screen Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-[#0a0a0a]">
         <img 
           src={bgImage} 
           alt="Barbearia Império" 
-          className="w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"
         />
         {/* Dark Overlay for Contrast */}

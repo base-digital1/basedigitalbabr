@@ -1,10 +1,10 @@
 import React from 'react';
 
 const galleryImages = [
-  "https://picsum.photos/seed/cut1/800/1000",
-  "https://picsum.photos/seed/cut2/800/1000",
-  "https://picsum.photos/seed/cut3/800/1000",
-  "https://picsum.photos/seed/cut4/800/1000"
+  "/galeria-1.jpg.png.png",
+  "/galeria-2.jpg.png.png",
+  "/galeria-3.jpg.png.png",
+  "/galeria-4.jpg.png.png"
 ];
 
 export default function Galeria() {
@@ -21,12 +21,12 @@ export default function Galeria() {
           {galleryImages.map((src, index) => (
             <div 
               key={index} 
-              className={`relative aspect-[3/4] rounded-[20px] overflow-hidden shadow-2xl border border-white/5 transition duration-500 ease-in-out hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-primary/30 hover:-translate-y-2 will-change-transform ${index % 2 !== 0 ? 'lg:translate-y-12' : ''}`}
+              className={`relative aspect-[3/4] rounded-[20px] overflow-hidden shadow-2xl border border-white/5 transition duration-500 ease-in-out hover:shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-primary/30 hover:-translate-y-2 will-change-transform bg-[#1a1a1a] ${index % 2 !== 0 ? 'lg:translate-y-12' : ''}`}
             >
               <img 
                 src={src} 
                 alt={`Corte de Cabelo ${index + 1}`} 
-                className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 hover:brightness-100 transition duration-700 transform hover:scale-110 transform-gpu will-change-[transform,filter]"
+                className="absolute inset-0 w-full h-full object-cover transition duration-700 transform hover:scale-110 transform-gpu will-change-transform"
                 referrerPolicy="no-referrer"
                 loading="lazy"
               />

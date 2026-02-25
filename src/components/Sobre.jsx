@@ -1,7 +1,8 @@
 import React from 'react';
 
 export default function Sobre() {
-  const bgImage = "https://picsum.photos/seed/barberabout/1000/800";
+  // Imagem da seção Sobre Nós
+  const bgImage = "/sobre-bg.jpg.png";
 
   return (
     <section id="sobre" className="py-32 px-8 bg-[#111111] relative overflow-hidden">
@@ -27,11 +28,11 @@ export default function Sobre() {
           </div>
 
           {/* Image - Asymmetrical Right */}
-          <div className="w-full lg:w-3/5 relative z-0 lg:-ml-32">
+          <div className="w-full lg:w-3/5 relative z-0 lg:-ml-32 h-[500px] md:h-[700px] bg-[#1a1a1a] rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
             <img 
               src={bgImage} 
               alt="Sobre a Barbearia Império" 
-              className="w-full h-[500px] md:h-[700px] object-cover rounded-[20px] shadow-[0_20px_50px_rgba(0,0,0,0.6)] transition duration-500 ease-in-out transform-gpu"
+              className="absolute inset-0 w-full h-full object-cover transition duration-500 ease-in-out transform-gpu"
               referrerPolicy="no-referrer"
               loading="lazy"
             />

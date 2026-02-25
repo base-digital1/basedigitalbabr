@@ -4,22 +4,22 @@ const servicesData = [
   {
     id: 'corte',
     title: "Corte Masculino",
-    image: "https://picsum.photos/seed/corte/800/600"
+    image: "/servico-corte.jpg.png"
   },
   {
     id: 'barba',
     title: "Barba",
-    image: "https://picsum.photos/seed/barba/800/600"
+    image: "/servico-barba.jpg.png"
   },
   {
     id: 'sobrancelha',
     title: "Sobrancelha",
-    image: "https://picsum.photos/seed/sobrancelha/800/600"
+    image: "/servico-sobrancelha.jpg.png.png"
   },
   {
     id: 'pigmentacao',
     title: "Pigmentação",
-    image: "https://picsum.photos/seed/pigmentacao/800/600"
+    image: "/servico-pigmentacao.jpg.png.png"
   }
 ];
 
@@ -37,12 +37,12 @@ export default function Servicos() {
           {servicesData.map((service) => (
             <div 
               key={service.id} 
-              className="group relative overflow-hidden rounded-[20px] shadow-xl border border-white/5 hover:border-primary/50 hover:shadow-[0_15px_40px_rgba(201,162,39,0.15)] transition duration-500 ease-in-out transform hover:-translate-y-2 cursor-default will-change-transform aspect-[4/3] md:aspect-[16/10]"
+              className="group relative overflow-hidden rounded-[20px] shadow-xl border border-white/5 hover:border-primary/50 hover:shadow-[0_15px_40px_rgba(201,162,39,0.15)] transition duration-500 ease-in-out transform hover:-translate-y-2 cursor-default will-change-transform aspect-[4/3] md:aspect-[16/10] bg-[#1a1a1a]"
             >
               <img 
                 src={service.image} 
                 alt={service.title} 
-                className="w-full h-full object-cover transition duration-700 ease-in-out transform group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover transition duration-700 ease-in-out transform group-hover:scale-110"
                 loading="lazy"
               />
               {/* Gradient Overlay */}
