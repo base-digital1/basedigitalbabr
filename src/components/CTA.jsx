@@ -1,23 +1,36 @@
 import React from 'react';
+import { motion } from 'motion/react';
 
 export default function CTA() {
+  const bgImage = "/cta-bg.png";
+
   return (
     <section className="py-32 px-8 bg-[#111111]">
       <div className="max-w-7xl mx-auto relative rounded-[32px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.8)]">
         
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0 bg-[#1a1a1a]">
-          <img 
-            src="https://picsum.photos/seed/barbercta/1920/800" 
+          <motion.img 
+            initial={{ scale: 1.1, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 0.4 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            src={bgImage} 
             alt="Barbearia CTA" 
-            className="absolute inset-0 w-full h-full object-cover opacity-40"
+            className="absolute inset-0 w-full h-full object-cover"
             referrerPolicy="no-referrer"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 py-32 px-8 text-center flex flex-col items-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 py-32 px-8 text-center flex flex-col items-center"
+        >
           <h2 className="text-6xl md:text-8xl text-primary mb-8 uppercase tracking-widest font-heading drop-shadow-2xl">
             Pronto para o<br/>próximo nível?
           </h2>
@@ -32,7 +45,7 @@ export default function CTA() {
           >
             Agendar Agora
           </a>
-        </div>
+        </motion.div>
 
       </div>
     </section>

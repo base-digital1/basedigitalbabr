@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 
 export default function Hero() {
   const headline = "Barbearia Império";
@@ -11,7 +12,10 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Full Screen Background Image */}
       <div className="absolute inset-0 z-0 bg-[#0a0a0a]">
-        <img 
+        <motion.img 
+          initial={{ scale: 1.1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
           src={bgImage} 
           alt="Barbearia Império" 
           className="absolute inset-0 w-full h-full object-cover object-center"
@@ -22,7 +26,12 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 w-full flex flex-col items-start pt-20">
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="relative z-10 max-w-7xl mx-auto px-8 w-full flex flex-col items-start pt-20"
+      >
         <h1 className="text-7xl md:text-8xl lg:text-[140px] mb-6 uppercase tracking-widest leading-[0.9] font-heading drop-shadow-2xl">
           {words.map((word, wIndex) => (
             <React.Fragment key={wIndex}>
@@ -57,7 +66,7 @@ export default function Hero() {
         >
           Agendar Horário
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }
