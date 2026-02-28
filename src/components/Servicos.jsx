@@ -60,9 +60,17 @@ export default function Servicos() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               {/* Content */}
-              <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 flex items-end justify-between">
+              <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 flex items-end justify-between pointer-events-none">
                 <span className="text-3xl md:text-4xl font-heading text-white tracking-widest uppercase drop-shadow-lg">{service.title}</span>
-                <span className="text-primary font-heading text-4xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">+</span>
+                <a 
+                  href={`https://wa.me/5567991788626?text=${encodeURIComponent(`Olá! Gostaria de agendar um horário para o serviço de ${service.title}. Poderiam me informar a disponibilidade?`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-heading text-4xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg pointer-events-auto cursor-pointer hover:text-white"
+                  title={`Agendar ${service.title}`}
+                >
+                  +
+                </a>
               </div>
             </motion.div>
           ))}

@@ -47,7 +47,7 @@ function Navbar() {
           rel="noopener noreferrer"
           className="relative z-10 px-7 py-2.5 rounded-full bg-gradient-to-r from-[#C9A227] via-[#E5C045] to-[#C9A227] bg-[length:200%_auto] text-[#0a0a0a] font-bold text-sm uppercase tracking-widest shadow-[0_0_15px_rgba(201,162,39,0.3)] transition duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-105 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(201,162,39,0.6)] hover:bg-right will-change-transform"
         >
-          Solicitar Orçamento
+          Agendar Horário
         </a>
       </div>
     </nav>
