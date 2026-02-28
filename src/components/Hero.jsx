@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           src={bgImage} 
           alt="Barbearia Império" 
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center"
           referrerPolicy="no-referrer"
         />
         {/* Dark Overlay for Contrast */}

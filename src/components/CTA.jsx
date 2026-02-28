@@ -17,7 +17,7 @@ export default function CTA() {
             transition={{ duration: 1.5, ease: "easeOut" }}
             src={bgImage} 
             alt="Barbearia CTA" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center"
             referrerPolicy="no-referrer"
             loading="lazy"
           />

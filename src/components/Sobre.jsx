@@ -40,7 +40,7 @@ export default function Sobre() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="w-full lg:w-3/5 relative z-0 lg:-ml-32 h-[500px] md:h-[700px] bg-[#1a1a1a] rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
+            className="w-full lg:w-3/5 relative z-0 lg:-ml-32 h-[350px] sm:h-[450px] md:h-[600px] lg:h-[700px] bg-[#1a1a1a] rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
           >
             <motion.img 
               initial={{ scale: 1.2 }}
@@ -49,7 +49,7 @@ export default function Sobre() {
               transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
               src={bgImage} 
               alt="Sobre a Barbearia Império" 
-              className="absolute inset-0 w-full h-full object-cover transition duration-500 ease-in-out transform-gpu"
+              className="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center transition duration-500 ease-in-out transform-gpu"
               referrerPolicy="no-referrer"
               loading="lazy"
             />

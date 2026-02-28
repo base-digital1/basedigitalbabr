@@ -37,7 +37,7 @@ export default function Galeria() {
               <img 
                 src={src} 
                 alt={`Corte de Cabelo ${index + 1}`} 
-                className="absolute inset-0 w-full h-full object-cover transition duration-700 transform hover:scale-110 transform-gpu will-change-transform"
+                className="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center transition duration-700 transform hover:scale-110 transform-gpu will-change-transform"
                 referrerPolicy="no-referrer"
                 loading="lazy"
               />
