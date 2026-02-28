@@ -54,6 +54,22 @@ function Navbar() {
   );
 }
 
+function FloatingChat() {
+  return (
+    <a
+      href="https://wa.me/5567991788626"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-r from-[#C9A227] via-[#E5C045] to-[#C9A227] bg-[length:200%_auto] text-[#0a0a0a] animate-premium-pulse transition-all duration-300 hover:scale-110 hover:bg-right focus:outline-none"
+      aria-label="Agendar Horário"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="md:w-7 md:h-7">
+        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+      </svg>
+    </a>
+  );
+}
+
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-primary selection:text-[#0a0a0a]">
@@ -66,6 +82,7 @@ export default function App() {
       <CTA />
       <Contato />
       <Footer />
+      <FloatingChat />
     </div>
   );
 }
