@@ -30,9 +30,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative z-10 max-w-7xl mx-auto px-8 w-full flex flex-col items-start pt-20"
+        className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full flex flex-col items-start pt-24 md:pt-20"
       >
-        <h1 className="text-7xl md:text-8xl lg:text-[140px] mb-6 uppercase tracking-widest leading-[0.9] font-heading drop-shadow-2xl">
+        <h1 className="text-[13vw] sm:text-6xl md:text-8xl lg:text-[120px] xl:text-[140px] mb-4 md:mb-6 uppercase tracking-widest leading-[1.1] md:leading-[0.9] font-heading drop-shadow-2xl">
           {words.map((word, wIndex) => (
             <React.Fragment key={wIndex}>
               <span className={`inline-block whitespace-nowrap ${wIndex === 1 ? 'text-primary' : 'text-white'}`}>
@@ -54,7 +54,7 @@ export default function Hero() {
           ))}
         </h1>
         
-        <p className="text-gray-300 text-xl md:text-2xl font-light tracking-wide max-w-xl mb-12 drop-shadow-md">
+        <p className="text-gray-300 text-lg sm:text-xl md:text-2xl font-light tracking-wide max-w-xl mb-8 md:mb-12 drop-shadow-md">
           Precisão, estilo e presença em cada corte.
         </p>
 
@@ -62,7 +62,7 @@ export default function Hero() {
           href="https://wa.me/5567991788626" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block bg-primary text-[#0a0a0a] font-bold text-lg md:text-xl px-12 py-5 rounded-[20px] uppercase tracking-[0.15em] hover:bg-white hover:shadow-[0_10px_40px_rgba(201,162,39,0.4)] transition duration-300 ease-in-out transform hover:-translate-y-1 will-change-transform"
+          className="inline-block bg-primary text-[#0a0a0a] font-bold text-base md:text-lg lg:text-xl px-8 py-4 md:px-12 md:py-5 rounded-[20px] uppercase tracking-[0.15em] hover:bg-white hover:shadow-[0_10px_40px_rgba(201,162,39,0.4)] transition duration-300 ease-in-out transform hover:-translate-y-1 will-change-transform"
         >
           Agendar Horário
         </a>

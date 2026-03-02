@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import Sobre from './components/Sobre';
+import Diferenciais from './components/Diferenciais';
 import Servicos from './components/Servicos';
 import Galeria from './components/Galeria';
 import Depoimentos from './components/Depoimentos';
@@ -29,7 +30,7 @@ function Navbar() {
 
         {/* Menu Items */}
         <div className="hidden md:flex items-center gap-3 lg:gap-5 relative z-10">
-          {['Sobre', 'Serviços', 'Galeria', 'Depoimentos'].map((item) => (
+          {['Sobre', 'Diferenciais', 'Serviços', 'Galeria', 'Depoimentos'].map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`} 
@@ -45,7 +46,7 @@ function Navbar() {
           href="https://wa.me/5567991788626" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="relative z-10 px-7 py-2.5 rounded-full bg-gradient-to-r from-[#C9A227] via-[#E5C045] to-[#C9A227] bg-[length:200%_auto] text-[#0a0a0a] font-bold text-sm uppercase tracking-widest shadow-[0_0_15px_rgba(201,162,39,0.3)] transition duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-105 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(201,162,39,0.6)] hover:bg-right will-change-transform"
+          className="relative z-10 px-5 md:px-7 py-2 md:py-2.5 rounded-full bg-gradient-to-r from-[#C9A227] via-[#E5C045] to-[#C9A227] bg-[length:200%_auto] text-[#0a0a0a] font-bold text-xs md:text-sm uppercase tracking-widest shadow-[0_0_15px_rgba(201,162,39,0.3)] transition duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-105 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(201,162,39,0.6)] hover:bg-right will-change-transform"
         >
           Agendar Horário
         </a>
@@ -76,6 +77,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Sobre />
+      <Diferenciais />
       <Servicos />
       <Galeria />
       <Depoimentos />

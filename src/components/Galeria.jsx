@@ -10,7 +10,7 @@ const galleryImages = [
 
 export default function Galeria() {
   return (
-    <section id="galeria" className="py-32 px-8 bg-[#111111]">
+    <section id="galeria" className="py-20 md:py-32 px-4 md:px-8 bg-[#111111]">
       <div className="max-w-7xl mx-auto">
         
         <motion.div 
@@ -18,10 +18,10 @@ export default function Galeria() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-20 flex flex-col items-end text-right"
+          className="mb-12 md:mb-20 flex flex-col items-center md:items-end text-center md:text-right"
         >
-          <h2 className="text-5xl md:text-7xl text-primary mb-6 uppercase tracking-widest font-heading">Galeria</h2>
-          <div className="w-24 h-1 bg-primary rounded-full"></div>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl text-primary mb-4 md:mb-6 uppercase tracking-widest font-heading">Galeria</h2>
+          <div className="w-20 md:w-24 h-1 bg-primary rounded-full"></div>
         </motion.div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
